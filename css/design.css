@@ -1,3 +1,4 @@
+
 .container {
 	font-family: Helvetica, Verdana, sans-serif;
 	background-color: rgba(39, 101, 45, 0.3);
@@ -8,6 +9,7 @@
 	text-align: center;
 	font-weight:300;
 	font-size: 45px;
+	color:darkgreen
 }
 #someQuote {
 	text-align: center;
