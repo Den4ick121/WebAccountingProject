@@ -1,0 +1,31 @@
+.container {
+	font-family: Helvetica, Verdana, sans-serif;
+	background-color: rgba(39, 101, 45, 0.3);
+	font-style:normal;
+	width: 100%;
+}
+#header {
+	text-align: center;
+	font-weight:300;
+	font-size: 45px;
+}
+#someQuote {
+	text-align: center;
+	width: 100%;
+
+}
+#awardsHeading {
+	text-align: center;
+
+}
+#awards {
+	background-color: rgba(39, 44, 45, 0.3);
+}
+#intro {
+	background-color: rgba(39, 101, 45, 0.3);
+	text-align: center;
+}
+#bodyContent {
+	background-color: rgba(39, 101, 45, 0.3);
+	text-align: center;
+}
