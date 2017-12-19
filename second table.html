@@ -11,49 +11,148 @@
 		 </div>
 
 	
-            <nav  class="navbar navbar-inverse bg-inverse">
- <div class="container-fluid">
+        <nav class="navbar navbar-inverse bg-inverse">
+  <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="Home.html">Skynet Accouting Systems</a>
     </div>
     <ul class="nav navbar-nav">
-		<li><a href="login.html">Login</a></li>
-       <li><a href="Home.html">Home</a></li>
-      <li class="active"><a href="services.html">Our Service</a></li>
+		<li ><a href="login.html">Login</a></li>
+      <li ><a href="Home.html">Home</a></li>
+      <li><a href="services.html">Our Service</a></li>
       <li><a href="career.html">Career</a></li>
       <li><a href="contact.html">About us</a></li>
-	  <li><a href="input.html">Accounting</a></li>
+	  <li class="active"><a href="input.html">Accounting</a></li>
+
 
     </ul>
   </div>
 </nav>
-  
 
-<div class="container">
-<div id="altPar">
-<img src = "img/ornament.png" height = "150" width = "325" />
 
-  <h2><b>Our Services</b></h2><br>
-  <hr>
-  <p>è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.</p>
-   </div>
-   </br>
-   <div id="services">
+<div class="container" id="input">
+<legend><a href = "input.html">Template </a>  &#8226
+<a href = "second table.html"> Template Two</a>  &#8226 
+<a href = "third table.html">Template Three</a></legend>
 
-<div class="row" >
-<div class="col-md-12">
-<img class="img-circle" class="rounded float-left"  src="http://placehold.it/140x140" />
-<h3>Tax Management Services</h3>
-<img class="img-circle" class="rounded float"  src="http://placehold.it/140x140"/>
-<h3>Estate & Trust Planning & Tax Preparation</h3>
-<img class="img-circle" class="rounded float-right"  src="http://placehold.it/140x140" />
-<h3>IRS Representation</h3>
+<fieldset>
+<h1> Form 2 </h1>
+<div class = "form-row">
+<div class ="form-group col-md-4">
+<form action="http://www.example.com/profile.php">
+<p>Choose payer: </p>
+<select name="payer" class="form-control">
+<option value="MacDonalds">
+MacDonalds </option>
+<option value="BurgerKing">
+BurgerKing </option>
+<option value="KFC">
+KFC </option>
+</select>
+</form>
+</div>
+<div class ="form-group col-md-4">
+<form action="http://www.example.com/profile.php">
+<p>Cash and cash equivalents: </p>
+<select name="cash" class="form-control">
+<option value="dollars">
+Dollars </option>
+<option value="Gold">
+Gold </option>
+<option value="Kidney">
+Kidney </option>
+</select>
+</form>
+</div>
+
+<div class ="form-group col-md-4">
+<h1> Balance <span id="balance">000$</span></h1>
+</div>
+</div>
+<div class = "form-row">
+<div class ="col-md-4">
+<form action="http://www.example.com/bookings/method="post" >
+<label for ="username"> Date</label>
+<input type="date" name="date" class="form-control"/></label><br />
+</form>
+</div>
+<div class ="form-group col-md-4">
+
+<form action="http://www.example.com/profile.php">
+<p>Choose payment method: </p>
+<select name="payment" class="form-control">
+<option value="Visa">
+Visa </option>
+<option value="Bitcoin">
+Bitcoin </option>
+<option value="Dollars">
+Dollars </option>
+</select>
+</form>
+</div>
+<div class ="form-group col-md-4">
+<p>Order No.</p>
+<input type="text" name="order" class="form-control"/>
+</div>
+</div>
+
+</br>
+<div class ="form-row">
+<div class ="form-group col-md-12">
+
+<div style="overflow-x:auto;">
+
+<table  cellspacing="5"   cellpadding="6" id = "table">
+<tr><th colspan = "6" align = "center" >Purchase Order:</th>
+</tr>
+<tr>
+<th scope="column">Date</th>
+<th scope="column">Order No.</th>
+<th scope="column">Quantity</th>
+<th scope="column">Unit Price</th>
+<th scope="column">Vendor</th>
+<th scope="column">TOTAL</th>
+
+
+</tr>
+<td>30th of Februrary</td>
+<td>6263</td>
+<td>Empty</td>
+<td>100$</td>
+<td>Disney</td>
+<td>Empty</td>
+</tr>
+<tr>
+<td>30th of Februrary</td>
+<td>6263</td>
+<td>Empty</td>
+<td>100$</td>
+<td>Disney</td>
+<td>Empty</td>
+</tr>
+
+</table>
+</div>
+</div>
+</div>
+</br>
+<div class = "form-row">
+<div class ="form-group col-md-12">
+
+<input type ="button" value = "Add a line" class="btn btn-primary"/>
+<input type ="button" value = "Clear a line" class="btn btn-primary"/>
+</div>
+</div>
+</fieldset>
 </div>
 
 
-</div>
-  </div>
-</div>
+
+
+
+
+
+
 <br><br>
 <div class="footer-section">
     <div class="footer">
@@ -125,8 +224,6 @@
           </div>
         </div>
     </div>
-
-
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
