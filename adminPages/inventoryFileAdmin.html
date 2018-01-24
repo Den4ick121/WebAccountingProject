@@ -1,33 +1,43 @@
 <!DOCTYPE html>
-<html lang="eng-US">
-<head>
-    <title>Accounting company</title>
-    <link rel="stylesheet" type = "text/css" href="../css/design.css">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Payment</title>
 
-</head>
-<body>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type = "text/css" href="../css/adminCSS.css">
+
+  </head>
+  <body>
 	<div id="Home">
 
 		 <div id="logo">
-		  
-
 		 </div>
 
 	
-        <nav class="navbar navbar-inverse bg-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="Home.html">Skynet Accouting Systems</a>
-    </div>
-    <ul class="nav navbar-nav">
-	<li ><a href="homeAdmin.html">Home</a></li>
-	<li><a href="purchasingOrderAdmin.html">Expendetur</a></li>
-      <li><a href="salesTransactionAdmin.html">Sales</a></li>
-	  <li><a href="../home.html">Exit</a></li>
+        <nav class="navbar navbar-inverse bg-inverse" id = "navbar">
+			<div class="navbar-header">
+			  <h1 class = "headerDesign">Skynet Accounting Systems</h1>
+			</div>
+	
+		<ul class="nav navbar-nav">
+				<li ><a href="homeAdmin.html">Home</a></li>
+				<li><a href="cashCollectionAdmin.html">Revenue</a></li>
+				<li><a href="purchasingOrderAdmin.html">Expendetur</a></li>
+				<li><a href="cashCollectionAdmin.html">Reports</a></li>
+				<li><a href="cashCollectionAdmin.html">Chart of Accounts</a></li>
+				<li><a href="cashCollectionAdmin.html">Help</a></li>
 
-    </ul>
-  </div>
-</nav>
+				<li><a href="../home.html" class = "exit">Exit</a></li>
+		</ul>
+		</nav>
+
+	
+	</div>
 
 
 <div class="container">
@@ -36,142 +46,115 @@
             <div class="col-md-12 ">
 
 				<ol class="breadcrumb" id = "secondNavbar">
-				  <li ><a href="purchasingOrderAdmin.html">Purchasing Order</a></li>
-					  <li><a href="paymentAdmin.html">Payment</a></li>
-					  <li><a href="inventoryFileAdmin.html" class = "active">Inventory</a></li>
-					  <li><a href="supplierInfoAdmin.html">Supplier Information</a></li>
+				<li ><a href="purchasingOrderAdmin.html" class = "aWhite">Purchasing Order</a></li>
+				<li><a href="inventoryFileAdmin.html" class = "aWhiteActive">Inventory</a></li>
+				<li><a href="supplierInfoAdmin.html" class = "aWhite">Supplier Information</a></li>
+				<li><a href="paymentAdmin.html" class = "aWhite">Payment</a></li>
 				</ol>
 			</div>
 		</div>
-	<div id = "input">
-
-		<div class="row">
-					<div class="col-md-12 ">
-
-						<div class="panel panel-default">
-		  <!-- Default panel contents -->
-			<div class="panel-heading"><h2> Inventory File: </h2></div>
-		<table class = "table-bordered">
-		<thead>
-			<tr>
-				<th scope="column">Item No.</th>
-				<th scope="column">Name of Product</th>
-				<th scope="column">Description</th>
-				<th scope="column">Quantity</th>
-				<th scope="column">Cost per Unit</th>
-				<th scope="column">Total Cost</th>
-				<th scope="column">Defects</th>
-				<th scope="column">Supplier</th>
-			</tr>
-		</thead>
-
-		<tbody>
-	<tr>
-		<td>3242</td>
-		<td>Bitcoins</td>
-		<td>It's Bitcoins</td>
-		<td>420</td>
-		<td>15k$</td>
-		<td>A lot</td>
-		<td>No one knows how it works</td>
-		<td>???</td>
-
-	</tr>
-	<tr>
-		<td>3242</td>
-		<td>Bitcoins</td>
-		<td>It's Bitcoins</td>
-		<td>420</td>
-		<td>15k$</td>
-		<td>A lot</td>
-		<td>No one knows how it works</td>
-		<td>???</td>
-
-	</tr>
-	<tr>
-		<td>3242</td>
-		<td>Bitcoins</td>
-		<td>It's Bitcoins</td>
-		<td>420</td>
-		<td>15k$</td>
-		<td>A lot</td>
-		<td>No one knows how it works</td>
-		<td>???</td>
-
-	</tr>
-	<tr>
-		<td>3242</td>
-		<td>Bitcoins</td>
-		<td>It's Bitcoins</td>
-		<td>420</td>
-		<td>15k$</td>
-		<td>A lot</td>
-		<td>No one knows how it works</td>
-		<td>???</td>
-
-	</tr>
-	<tr>
-		<td>3242</td>
-		<td>Bitcoins</td>
-		<td>It's Bitcoins</td>
-		<td>420</td>
-		<td>15k$</td>
-		<td>A lot</td>
-		<td>No one knows how it works</td>
-		<td>???</td>
-
-	</tr>
-	<tr>
-		<td>3242</td>
-		<td>Bitcoins</td>
-		<td>It's Bitcoins</td>
-		<td>420</td>
-		<td>15k$</td>
-		<td>A lot</td>
-		<td>No one knows how it works</td>
-		<td>???</td>
-
-	</tr>
-	<tr>
-		<td>3242</td>
-		<td>Bitcoins</td>
-		<td>It's Bitcoins</td>
-		<td>420</td>
-		<td>15k$</td>
-		<td>A lot</td>
-		<td>No one knows how it works</td>
-		<td>???</td>
-
-	</tr>
-	
-	</tbody>
-	</table>
-					</div>
-				</div>
-			</div>
 </br>
+	<div id = "tableDiv"> 
+			<h2 class = "headDesign"> Inventory File </h2>
+			<table class = "table table-bordered">
 
+				<thead>
+				<tr>
+					<th scope="column"></th>
+					<th scope="column">Item No.</th>
+					<th scope="column">Name of Product</th>
+					<th scope="column">Description</th>
+					<th scope="column">Quantity</th>
+					<th scope="column">Cost per Unit</th>
+					<th scope="column">Total Cost</th>
+					<th scope="column">Defects</th>
+					<th scope="column">Supplier</th>
 
-		<fieldset>
-			<hr>
-				<div class = "form-row">
-							<div class="col-sm-4">
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td><input id="checkBox" type="checkbox"/></td>
+					<td>1235</td>
+					<td>Pizza Fungi</td>
+					<td>Mushroom Pizza</td>
+					<td>420</td>			
+					<td>420</td>
+					<td>420</td>
+					<td>...</td>			
+					<td>Italian Chef</td>
+				</tr>
+				<tr>
+					<td><input id="checkBox" type="checkbox"/></td>
+					<td>1236</td>
+					<td>Pizza Fungi</td>
+					<td>Mushroom Pizza</td>
+					<td>420</td>			
+					<td>420</td>
+					<td>420</td>
+					<td>...</td>			
+					<td>Italian Chef</td>
+				</tr>
+				<tr>
+					<td><input id="checkBox" type="checkbox"/></td>
+					<td>1237</td>
+					<td>Pizza Fungi</td>
+					<td>Mushroom Pizza</td>
+					<td>420</td>			
+					<td>420</td>
+					<td>420</td>
+					<td>...</td>			
+					<td>Italian Chef</td>
+				</tr>
+				<tr>
+					<td><input id="checkBox" type="checkbox"/></td>
+					<td>1238</td>
+					<td>Pizza Fungi</td>
+					<td>Mushroom Pizza</td>
+					<td>420</td>			
+					<td>420</td>
+					<td>420</td>
+					<td>...</td>			
+					<td>Italian Chef</td>
+				</tr>
+				</tbody>
+			</table>
+					<div class = "form-row">
+						<div class ="form-group col-md-3 col-md-offset-5">
+							<input type="search" id="search" placeholder="Seach by order No.">
+						</div>
+						<div class ="form-group col-md-2">
+								<input type ="button" value = "Edit a line" id = "button" class="btn btn-primary btn-md"/>
+						</div>
+						<div class ="form-group col-md-2">
+
+								<input type ="button" value = "Clear a line" id = "button" class="btn btn-primary btn-md"/>
+						</div>
+					</div>
+		</div>
+</br>		
+	<div id = "inputDiv">
+	<fieldset>
+		<h2 class = "headDesign"> Inventory Form </h2>
+		<hr>
+		<div class = "form-row">
+							<div class="form-group col-md-4">
 								<form>
-									<label for = "name"> Item No. </label>  
+									<p> Item No. </p> 
 									<input type="text" class="form-control">
 								</form>
 							</div>
 
-							<div class ="col-sm-4">
+							<div class ="form-group col-md-4">
 								<form>
-									<label for = "name"> Name of Product </label>  
+									<p> Name of Product </p>  
 									<input type="text" class="form-control">
 								</form>
 							</div>
 
-							<div class ="col-sm-4">
+							<div class ="form-group col-md-4">
 								<form>
-									<label for = "name"> Description </label>  
+									<p> Description </p>  
 									<input type="text" class="form-control">
 								</form>
 							</div>
@@ -179,57 +162,59 @@
 				</div>
 
 				<div class = "form-row">
-							<div class="col-sm-4">
+							<div class="form-group col-md-4">
 								<form>
-									<label for = "name"> Quantity </label>  
+									<p> Quantity </p>  
 									<input type="text" class="form-control">
 								</form>
 							</div>
 
-							<div class ="col-md-4">
+							<div class ="form-group col-md-4">
 								<form>
-									<label for = "name"> Cost per Unit </label>  
+									<p> Cost per Unit </p>  
 									<input type="text" class="form-control">
 								</form>
 							</div>
 
-							<div class ="col-sm-4">
+							<div class ="form-group col-md-4">
 								<form>
-									<label for = "name"> Total Cost </label>  
+									<p> Total Cost </p>  
 									<input type="text" class="form-control">
 								</form>
 							</div>
 				</div>
 
 				<div class = "form-row">
-							<div class="col-sm-4">
+							<div class="form-group col-md-4">
 								<form>
-									<label for = "name"> Supplier </label>  
+									<p> Supplier </p>  
 									<input type="text" class="form-control">
 								</form>
 							</div>
 
-							<div class ="col-sm-8">
+							<div class ="form-group col-md-8">
 								<form>
-									<label for = "name"> Defects </label>  
+									<p> Defects </p>  
 									<input type="text" class="form-control">
 								</form>
 							</div>
 
 				</div>
 				</br>
-				<div class = "form-row">
-							<div class ="form-group col-md-12">
-								<input type ="button" value = "Add a line" class="btn btn-primary btn-lg"/>
-								<input type ="button" value = "Clear a line" class="btn btn-primary btn-lg"/>
-							</div>
+			<div class = "form-row">
+				<div class ="form-group col-md-12">
+
+					<input type ="button" value = "Add a line" id = "formButton" class="btn btn-primary btn-lg btn-block"/>
+				</div>
 			</div>
-		</fieldset>
-
-
 			
+		</fieldset>
 	</div>
 </div>
+
+
+
+
 
 </br>
 
@@ -237,23 +222,14 @@
 <div class="footer-section">
     <div class="footer">
   <div class="container">
-        <div class="col-md-4 footer-one">
-          <div class="foot-logo">
-              <img src="http://smarthead.ancorathemes.com/wp-content/uploads/2016/12/footer_logo.png">
-          </div> 
+        <div class="col-md-4">
+				<h1> Skynet Accounting Systems </h1>
            
-           <p>Providing Life Changing Experiences Through Education. Class That Fit Your Busy Life. Closer to Home
-                </p>
-            <div class="social-icons"> 
-               <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-               <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
-              <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
-              <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
-          </div>
-        </div>
-        <div class="col-md-2 footer-two">
+  
+		</div>
+        <div class="col-md-8" id = "divNavbar">
            <h5>Quick Links</h5>
-              <ul>
+              <ul class="breadcrumb" id = "footerNavbar">
                     <li><a href="#"> About Us</a> </li>
                     <li><a href="#"> Our News</a> </li>
                     <li><a href="services.html"> Our Services</a> </li>
@@ -261,31 +237,9 @@
                   </ul>
                   
         </div>
-        <div class="col-md-2 footer-three">
-           <h5>Services</h5>
-              <ul>
-                    <li><a href="#"> About Us</a> </li>
-                    <li><a href="#"> Our News</a> </li>
-                    <li><a href="services.html"> Our Services</a> </li>
-                    <li><a href="contact.html"> Contact Us</a> </li>
-                  </ul>
-                  
-        </div>
-        <div class="col-md-4 footer-four">
-           <h5>Contact Us</h5>
-             <img src="http://iacademy.mikado-themes.com/wp-content/uploads/2017/05/footer-img-1.png">  
-                  
-        </div>
-        
-    
-    
-    
-    
-    
+         
     <div class="clearfix"></div>
   </div>
-</div>
-
 </div>
 <div class="footer-bottom">
         <div class="container">
@@ -295,19 +249,17 @@
                 <p>CopyRight © 2017 Digital All Rights Reserved</p>
               </div>
             </div> <!-- End Col -->
-            <div class="col-sm-6  ">
-                <div class="copyright-text pull-right">
-                <p> <a href="Home.html">Home</a> | <a href="#">Privacy</a> |<a href="#">Terms & Conditions</a> | <a href="#">Refund Policy</a> </p>
-              </div>          
-                          
-            </div> <!-- End Col -->
+                                
           </div>
         </div>
     </div>
+</div>
+
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/dd40cb5b47.js"></script>
+  <script src = "../js/search.js"> </script>
 </body>
 </html>
