@@ -14,19 +14,19 @@
 
 	
         <nav class="navbar navbar-inverse bg-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="Home.php">Skynet Accouting Systems</a>
-    </div>
+      <div class="navbar-header">
+         <h1 class = "headerDesign">Skynet Accounting Systems</h1>
+      </div>
     <ul class="nav navbar-nav">
-	<li class="active"><a href="login.php">Login</a></li>
-      <li><a href="homeUser.php">Home</a></li>
-      <li><a href="paymentUser.php">Purchases</a></li>
-	  <li><a href="help.php">Help</a></li>
-
+        <li class="active"><a href="login.php">Login</a></li>
+        <li><a href="register.php">Register</a></li>
+        <li><a href="Home.php">Home</a></li>
+        <li><a href="services.php">Our Service</a></li>
+        <li><a href="career.php">Career</a></li>
+        <li><a href="contact.php">About us & Contact</a></li>
     </ul>
-  </div>
 </nav>
+</div>
 
 
 <h1 id = "header">Login: </h1>

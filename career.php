@@ -11,9 +11,10 @@
 
 	
            <nav class="navbar navbar-inverse bg-inverse">
-			<div class="navbar-header">
-			   <h1 class = "headerDesign">Skynet Accounting Systems</h1>
-			</div>
+      <div class="navbar-header">
+         <h1 class = "headerDesign">Skynet Accounting Systems</h1>
+      </div>
+
 		<ul class="nav navbar-nav">
 			  <li><a href="login.php">Login</a></li>
 			  <li><a href="register.php">Register</a></li>

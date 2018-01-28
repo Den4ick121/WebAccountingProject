@@ -1,57 +1,11 @@
+<?php 
+ include("includes/site-header.php");
+?>
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Purchasing Order</title>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type = "text/css" href="../css/adminCSS.css">
-	<link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-	<div id="Home">
-
-		 <div id="logo">
-		 </div>
-
-	
-        <nav class="navbar navbar-inverse bg-inverse">
-			<div class="navbar-header">
-			   <h1 class = "headerDesign">Skynet Accounting Systems</h1>
-			</div>
-	
-		<ul class="nav navbar-nav">
-				<li ><a href="homeAdmin.php">Home</a></li>
-				<li><a href="cashCollectionAdmin.php">Revenue</a></li>
-				<li><a href="purchasingOrderAdmin.php">Expendetur</a></li>
-				<li><a href="reportsAdmin.php">Reports</a></li>
-				<li><a href="chartOfAccountsAdmin.php">Chart of Accounts</a></li>
-				<li><a href="cashCollectionAdmin.php">Help</a></li>
-
-				<li><a href="../home.php" class = "exit">Exit</a></li>
-		</ul>
-		</nav>
-
-	
-	</div>
-
-
+<br>
 <div class="container">
 
-        <div class="row">
-            <div class="col-md-12 ">
-
-				<ol class="breadcrumb" id = "secondNavbar">
-					<li ><a href="purchasingOrderAdmin.php" class = "aWhiteActive">Purchasing Order</a></li>
-					<li><a href="inventoryFileAdmin.php" class = "aWhite">Inventory</a></li>
-					<li><a href="supplierInfoAdmin.php" class = "aWhite">Supplier Information</a></li>
-					<li><a href="paymentAdmin.php" class = "aWhite">Payment</a></li>
-				</ol>
-			</div>
-		</div>
+        
 
 <div id = "inputDiv">
 	<fieldset>
@@ -127,64 +81,65 @@
 				<thead>
 				<tr>
 					<th scope="column"></th>
+					<th scope="column">Purchase No.</th>
 					<th scope="column">Date</th>
 					<th scope="column">Order No.</th>
 					<th scope="column">Quantity</th>
-					<th scope="column">Unit Price</th>
-					<th scope="column">Vendor</th>
 					<th scope="column">TOTAL</th>
+					<th scope="col">More details</th>
 
 				</tr>
 				</thead>
 				<tbody>
 				<tr>
 					<td scope = "row"><input id="checkBox" type="checkbox"/></td>
-					<td>30th of Februrary</td>
+					
+					<td>1</td>
+					<td>2018-1-2</td>
 					<td id = "Order">1234</td>
-					<td>Empty</td>
-					<td>100$</td>
-					<td>Disney</td>
-					<td>Empty</td>
+					<td>2</td>
+					<td>2000$</td>
+					<td><a href="saledetail.php">Details</a></td>
 					
 				</tr>
 				<tr>
 					<td scope = "row"><input id="checkBox" type="checkbox"/></td>
-					<td>30th of Februrary</td>
+					<td>2</td>
+					<td>2018-1-2</td>
 					<td id = "Order">1235</td>
-					<td>Empty</td>
-					<td>100$</td>
-					<td>Disney</td>
-					<td>Empty</td>
+					<td>1</td>
+					<td>2000$</td>
+					<td><a href="saledetail.php">Details</a></td>
 
 				</tr>
 				<tr>
 					<td scope = "row"><input id="checkBox" type="checkbox"/></td>
-					<td>30th of Februrary</td>
+					<td>3</td>
+					<td>2018-1-2</td>
 					<td id = "Order">1236</td>
-					<td>Empty</td>
-					<td>100$</td>
-					<td>Disney</td>
-					<td>Empty</td>
+					<td>4</td>
+					<td>2000$</td>
+					<td><a href="saledetail.php">Details</a></td>
 
 				</tr>
 				<tr>
 					<td scope = "row"><input id="checkBox" type="checkbox"/></td>
-					<td>30th of Februrary</td>
+					<td>4</td>
+					<td>2018-1-2</td>
 					<td id = "Order">1237</td>
-					<td>Empty</td>
-					<td>100$</td>
-					<td>Disney</td>
-					<td>Empty</td>
+					<td>4</td>
+					<td>2000$</td>
+					<td><a href="saledetail.php">Details</a></td>
 
 				</tr>
 				<tr>
 					<td scope = "row"><input id="checkBox" type="checkbox"/></td>
-					<td>30th of Februrary</td>
+					<td>5</td>
+					<td>2018-1-2</td>
 					<td id = "Order">1238</td>
-					<td>Empty</td>
-					<td>100$</td>
-					<td>Disney</td>
-					<td>WHEW!</td>
+					<td>2</td>
+					<td>2000$</td>
+					<td><a href="saledetail.php">Details</a></td>
 
 				</tr>
 				</tbody>
@@ -212,46 +167,6 @@
 </br>
 
 
-<div class="footer-section">
-    <div class="footer">
-  <div class="container">
-        <div class="col-md-4">
-				<h1> Skynet Accounting Systems </h1>
-           
-  
-		</div>
-        <div class="col-md-8" id = "divNavbar">
-           <h5>Quick Links</h5>
-              <ul class="breadcrumb" id = "footerNavbar">
-                    <li><a href="#"> About Us</a> </li>
-                    <li><a href="#"> Our News</a> </li>
-                    <li><a href="services.html"> Our Services</a> </li>
-                    <li><a href="contact.html"> Contact Us</a> </li>
-                  </ul>
-                  
-        </div>
-         
-    <div class="clearfix"></div>
-  </div>
-</div>
-<div class="footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 ">
-              <div class="copyright-text">
-                <p>CopyRight © 2017 Digital All Rights Reserved</p>
-              </div>
-            </div> <!-- End Col -->
-                                
-          </div>
-        </div>
-    </div>
-</div>
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://use.fontawesome.com/dd40cb5b47.js"></script>
-  <script src = "../js/search.js"> </script>
-</body>
+<?php 
+ include("includes/site-footer.php");
+?>
