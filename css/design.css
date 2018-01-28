@@ -12,16 +12,31 @@ body, html {
 	color: rgba(255, 255, 255, 1);
 	padding: 25px;
 	margin: auto;
-
 }
+.navbar {
+	font-size: 18px;
+	padding: 8px;
+	background: url(../img/footerBackground.png) 100% top no-repeat; background-attachment:relative;
+}
+
+.navbar a {
+color: #70002B;
+}
+
+.headerDesign {
+	font-size: 30px;
+	color: #aece61;
+	margin-top: 6px;
+	padding-right: 5px;
+}
+
+
 #someQuote {
 	text-align: center;
 	width: 100%;
 	background-color: rgba(39, 44, 45, 0.7);
 	color: rgba(255, 255, 255, 1);
 	padding: ;
-
-
 }
 
 #achievments {
@@ -37,6 +52,7 @@ body, html {
 	border: 1px solid white;
 	padding: 25px;
 }
+
 #intro {
 	background-color: rgba(39, 44, 45, 0.7);
 	text-align: center;
@@ -57,6 +73,7 @@ body, html {
 	z-index: 1;
 	margin: auto;
 }
+
 #serviceEdit {
 	background-image: url(../img/serviceEdit.png); background-attachment:fixed;
 	height: 50%;
@@ -73,7 +90,7 @@ body, html {
 	width: 100%;	
 	padding: 150px;
 	z-index: 2;
-	}
+}
 	
 #aboutEdit {
 	background-image: url(../img/aboutEdit.png); background-attachment:fixed;
@@ -106,167 +123,92 @@ body, html {
 
 }
 
-
-
- #footer {
-	background-color: rgba(39, 44, 45, 0.7);
-	text-align: center;
-	color: rgba(255, 255, 255, 1);
-	margin: auto;
- }
+table {
+	width: 100%;
+	color: black;
+}
  
- #footer2 {
-	padding: 15px;
-	margin: auto;
- }
+td{
+	height: 25px;
+}
  
- h3 {
- }
+tr{
+   text-align: center;
+}
+ 
+th {
+	height: 50px;
+	padding: auto;
+}
 
- i {
+table, th, td {
+   border: 1px;
+   border-color: rgba(39, 44, 45, 0.7);
+   border-bottom: 20px;
+}
+
+
+i {
     font-size : 12px;
     padding-right: 10px;
     color: #aece61;
 }
 
-
-/* Footer */
-.footer {
-    position: relative;
-    background-color: #3A5F0B;
-    color: #7d7975;
-    padding: 95px 0 50px;
-    font-size:16px;
-}
-.footer p {
-    line-height:26px;
-    color : #fff;
-}
-.footer h5 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #aece61  ;
-    position: relative;
-    padding-bottom: 16px;
-}
-.footer h5:after {
-    content: '';
-    display: block;
-    margin: 5px 0 0;
-    width: 40%;
-    height: 1px;
-    background-color: #1e1d22 ;
-}
-
-.footer ul {
-    list-style: none;
-    line-height:35px;
-    margin: 0px;
-    color:#fff;
-    
-}
-.footer a {
-    color:# ;
-   
-}
-.footer a:hover {
-    color: #aece61 ;
-}
-
-/* Footer Logo */
-.foot-logo {
-    margin: 0px 0px 18px 0px;
-    padding: 0;
-}
-
-/*footer bottom */
-.footer-bottom {
-    padding-top: 10px;
-    padding-bottom: 25px;
-    border-top: 1px solid #2f2f33 ;
-    background: #1e1d22  ;
-    
-}
-.copyright-text p {
-    color: #7d7975;
-    margin-top: 18px;
-    margin-bottom: 0;
-    font-size:15px;
-}
-
-.copyright-text a {
-    color: #7d7975;
-    margin: 0px 10px 0px 10px;
-    
-}
-.copyright-text a:hover {
-    color: #aece61  ;
-    
-    
-}
-/* Social Icons */
-
-.social-icons{
-    
-    margin: 0;
-    padding: 0;
-    font-size : 10px;
-}
-
-.social {
-    margin:7px 7px 7px 0px;
-    color:#fff;
-}
-
-
-#social-fb:hover {
-     color: #3B5998;
-     transition:all .25s;
- }
- #social-tw:hover {
-     color: #4099FF;
-     transition:all .25s;
- }
- #social-gp:hover {
-     color: #d34836;
-     transition:all .25s;
- }
- #social-em:hover {
-     color: #f39c12;
-     transition:all .25s;
- }
- 
-table {
-	width: 100%;
+#chartHomediv {
+	width		: 100%;
+	height		: 500px;
+	font-size	: 11px;
+	background-color: rgba(39, 44, 45, 0.9);
+	border: 1px solid white;
 	
+}	
+	
+#chartSalesdiv {
+	width	: 100%;
+	height	: 275px;
+	background-color: rgba(39, 44, 45, 0.7);
+	border: 1px solid white;
+}	
 
- }
- 
-#table {
+#chartCustomersdiv {
+	width	: 100%;
+	height	: 275px;
+	background-color: rgba(39, 44, 45, 0.7);
+	border: 1px solid white;
+
+}	
+
+
+#form {
+	background-color: rgba(39, 44, 45, 0.7);
+	color: rgba(255, 255, 255, 1);	
+	border: 1px solid white;
+	padding: 15px;
+}
+
+.field {
+	clear: both;
+	text-align: right;
+	line-height: 25px;
 	background-color: rgba(39, 44, 45, 0.7);
 
- }
- 
-td{
-	height: 25px;
- }
- 
-tr{
-   text-align: center;
- }
-
-
- 
-table, th, td {
-   border: 1px solid white;
-   color: white;
 }
-th {
-	height:50px;
-	padding:auto;
-    background: linear-gradient(to right, #006600 29%, #66ff66 72%);
 
+label {
+	float: left;
+	padding-right:10px;
+	color: white;
 }
+
+.main {
+	float: left;
+	background-color: rgba(39, 44, 45, 0.7);
+	padding-right: 50px;
+}
+
+#forPadding {
+	padding: 100px;
+}	
 
 #login {
 	width: 50%;
@@ -280,13 +222,183 @@ th {
 }
 
 #input {
-	width: 85%;
+	width: 100%;
 	background-color: rgba(39, 44, 45, 0.7);
 	color: white;
 	display: block;
 	padding: 10px;
 	border: 1px solid white;
 }
+
+#exit {
+	float: right;
+}
+
+
+
+#secondNavbar {
+	background-color: rgba(39, 44, 45, 1);
+	margin-bottom: 3px;
+	font-size: 25px;
+}	
+	
+#button {
+	padding-top: 6px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+	font-size: 13px;
+	font-size: auto;
+}
+
+#bottomMargin {
+	margin-bottom: 15px;
+}	
+
+.panel {
+	background-color: 	background-color: rgba(39, 44, 45, 0.7);
+
+}
+
+#login {
+	text-align: center;
+	width: 50%;
+	margin: auto;
+	padding: center;
+	background-color: rgba(39, 44, 45, 0.7);
+	color: white;
+	display: block;
+	padding: 10px;
+	border: 1px solid white;
+}
+
+#name {
+	color: black;
+}
+
+#password {
+	color: black;
+}
+
 legend {
 	color: white;
 }
+
+
+
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+tr:nth-child(even) {
+  background: #e8eeef;
+}
+
+th, td {
+  text-align: left;
+  padding: 20px;
+  font-weight: 300;
+}
+
+tfoot tr {
+}
+
+tfoot td {
+  padding: 10px 2px;
+  font-size: 0.8em;
+  color: #8a97a0;
+}
+
+tr:hover {
+	background-color: white;
+			}
+.footer {
+    position: relative;
+    background: url(../img/footerBackground.png) 100% top no-repeat; background-attachment:relative;
+    color: #aece61;
+    padding: 25px 0 10px;
+    font-size:16px;
+	margin: left;
+}
+
+#divNavbar {
+	margin-top: 35px;
+}
+
+#footerNavbar {
+	background-color: transparent;
+	margin-bottom: 3px;
+	font-size: 20px;
+	text-align: left;
+}
+
+	
+.footer p {
+    line-height:26px;
+    color : #fff;
+}
+
+.footer h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #aece61;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.footer h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #aece61;
+    position: relative;
+}
+
+.footer h5:after {
+    content: '';
+    display: block;
+    margin: 5px 0 0;
+    width: 80%;
+    height: 1px;
+    background-color: white ;
+}
+
+.footer ul {
+    list-style: none;
+    line-height:35px;
+    padding: 0px;
+    color:#fff;
+    
+}
+.footer a {
+    color: white;
+   
+}
+.footer a:hover {
+    color: #aece61 ;
+}
+
+/* Footer Logo */
+.foot-logo {
+    margin: 0px 0px 18px 0px;
+    padding: 0;
+	color: #aece6;
+}
+
+/*footer bottom */
+.footer-bottom {
+	height: 45px;
+    padding-bottom: 10px;
+    border-top: 1px solid #2f2f33 ;
+    background: #1e1d22  ;
+    
+}
+.copyright-text p {
+    color: #7d7975;
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-size:15px;
+}
+   
