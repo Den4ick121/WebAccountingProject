@@ -45,36 +45,11 @@
   <input type="button" class="btn btn-success" value="Login" id="submit" onclick="validate()"/>
 </form>
   </div>
-</br>
 
-
-
-
-
-
+<br><br><br><br><br><br><br><br><br><br>
 
 <div class="footer-section">
-    <div class="footer">
-  <div class="container">
-        <div class="col-md-4">
-        <h1> Skynet Accounting Systems </h1>
-           
-  
-    </div>
-        <div class="col-md-8" id = "divNavbar">
-           <h5>Quick Links</h5>
-              <ul class="breadcrumb" id = "footerNavbar">
-                    <li><a href="#"> About Us</a> </li>
-                    <li><a href="#"> Our News</a> </li>
-                    <li><a href="services.php"> Our Services</a> </li>
-                    <li><a href="contact.php"> Contact Us</a> </li>
-                  </ul>
-                  
-        </div>
-         
     <div class="clearfix"></div>
-  </div>
-</div>
 <div class="footer-bottom">
         <div class="container">
           <div class="row">
@@ -87,7 +62,7 @@
           </div>
         </div>
     </div>
-</div>
+    </div>
 
 <script src="js/sign.js"></script>
 

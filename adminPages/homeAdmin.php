@@ -10,9 +10,9 @@
 <div id="chartHomediv"></div>
 </div>
 </div>
-</br>
+</br><br>
 
-</br>
+
 
 <?php 
  include("includes/site-footer.php");
