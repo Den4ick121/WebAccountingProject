@@ -43,7 +43,14 @@
 
 <div class="row">
 <div class="container alert alert-dark">
-
+<div class="row">
+<div class="container alert alert-dark">
+<div class="row justify-content-center">
+    <div class="d-flex flex-column ">
+        <div><h3>Balance Sheet</h3></div>
+        <div>As of <?php $mydate=getdate(date("U")); echo "$mydate[month] $mydate[mday], $mydate[year]"; ?></div>
+    </div>
+</div>
 <!--Details Acct Part Starts -->
     <div class="row">
         <!--Assets part starts-->
@@ -84,12 +91,12 @@
                     </dl>                    
                 </div>    
             </div>
-            <div class="row">            
-                <dl class="row">
-                        <dd class="col-sm-9">Total liability</dd>
-                        <dd class="col-sm-3"><?php echo $totalliability ?></dd>
-                </dl>
-            </div>
+                       
+            <dl class="row">
+                    <dd class="col-sm-9">Total liability</dd>
+                    <dd class="col-sm-3"><?php echo $totalliability ?></dd>
+            </dl>
+            
 
             <div class="row"><h2>Equity</h2></div>
             <div class="row">               
@@ -106,12 +113,12 @@
                     </dl>                    
                 </div>    
             </div>
-            <div class="row">            
-                <dl class="row">
-                        <dd class="col-sm-9">Total equity</dd>
-                        <dd class="col-sm-3"><?php echo $totalequity ?></dd>
-                </dl>
-            </div>
+                        
+            <dl class="row">
+                    <dd class="col-sm-9">Total equity</dd>
+                    <dd class="col-sm-3"><?php echo $totalequity ?></dd>
+            </dl>
+            
             
         </div>
             
@@ -135,12 +142,12 @@
         <div class="col-sm-auto border-left border-dark"></div>
 
         <div class="col">
-        <div class="row">
-            <dl class="row">
-                <dd class="col-sm-9">Total liability &amp; equity</dd>
-                <dd class="col-sm-3"><?php echo $totalliability + $totalequity  ?></dd>
-            </dl>
-        </div>
+        
+        <dl class="row">
+            <dd class="col-sm-9">Total liability &amp; equity</dd>
+            <dd class="col-sm-3"><?php echo $totalliability + $totalequity  ?></dd>
+        </dl>
+        
         </div>
     </div>
     </div>

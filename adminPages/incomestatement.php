@@ -33,6 +33,13 @@
 
 <div class="row">
 <div class="container alert alert-dark">
+<div class="row justify-content-center">
+    <div class="d-flex flex-column ">
+        <div><h3>Income Statement</h3></div>
+        <div>As of <?php $mydate=getdate(date("U")); echo "$mydate[month] $mydate[mday], $mydate[year]"; ?></div>
+    </div>
+</div>
+<div class="row">
 <div class="col">
     <div class="row">
         <h3>Revenue</h3></div>
@@ -74,10 +81,11 @@
         <div class="col">
         <dl class="row">
             <dt class="col-sm-9"><h3>Net Income</h3></dt>
-            <dd class="col-sm-3"><?php echo $totalrevenue - $totalexpense ?></dd>
+            <dd class="col-sm-3"><?php echo $totalrevenue + $totalexpense ?></dd>
         </dl>
         </div>
     </div>
+</div>
 </div>
 </div>
 </div>
