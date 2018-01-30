@@ -97,7 +97,7 @@
 	
 </br>
 	<div id = "tableDiv"> 
-			<h2 class = "headDesign"> Supplier Information File  </h2>
+			<h2 class = "headDesign"> Supplier Information</h2>
 			
 			<table class = "table table-bordered">
 
