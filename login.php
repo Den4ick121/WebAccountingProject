@@ -57,7 +57,7 @@
     <div class="footer">
   <div class="container">
         <div class="col-md-4">
-        <h1> Skynet Accounting Systems </h1>
+        <h1> Skynet Pharmaceutical </h1>
            
   
     </div>
