@@ -131,12 +131,7 @@
 				<tr>
 					<td colspan = "3">Springfield Spooning St. 4/20</td>
 				</tr>
-				<tr>
-					<th colspan = "3"> Status </th>
-				</tr>
-				<tr>
-					<td class = "status" id = "status" colspan = "3"> <span id="supplierStatus">...</span></td>
-				</tr>
+				
 				</tbody>
 			</table>
 			</br>
@@ -172,12 +167,7 @@
 				<tr>
 					<td colspan = "3">Springfield Spooning St. 4/20</td>
 				</tr>
-				<tr>
-					<th colspan = "3"> Status </th>
-				</tr>
-				<tr>
-					<td class = "status" id = "status" colspan = "3"> <span id="supplierStatus">...</span></td>
-				</tr>
+			
 				</tbody>
 			</table>
 			</br>
@@ -213,12 +203,7 @@
 				<tr>
 					<td colspan = "3">Springfield Spooning St. 4/20</td>
 				</tr>
-				<tr>
-					<th colspan = "3"> Status </th>
-				</tr>
-				<tr>
-					<td class = "status" id = "status" colspan = "3"> <span id="supplierStatus">...</span></td>
-				</tr>
+				
 				</tbody>
 			</table>
 			</br>
@@ -254,12 +239,7 @@
 				<tr>
 					<td colspan = "3">Springfield Spooning St. 4/20</td>
 				</tr>
-				<tr>
-					<th colspan = "3"> Status </th>
-				</tr>
-				<tr>
-					<td class = "status" id = "status" colspan = "3"> <span id="supplierStatus">...</span></td>
-				</tr>
+				
 				</tbody>
 			</table>
 		</div>
