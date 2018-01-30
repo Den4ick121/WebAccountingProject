@@ -1,4 +1,8 @@
+<<<<<<< HEAD:adminPages/includes/site-footer.php
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+=======
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+>>>>>>> f30510acd257efddbdb46ee350cbd9618fee3b5c:includes/site-footer.php
 <div class="footer-bottom">
         <div class="container">
           <div class="row">
