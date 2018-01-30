@@ -147,9 +147,7 @@
 <br><br><br><br>
 
 
-<?php 
-include("includes/calendar.php");
-?>
+
 
 <?php 
  include("includes/site-footer.php");
