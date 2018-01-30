@@ -13,7 +13,7 @@
         <nav class="navbar navbar-inverse bg-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="Home.php">Skynet Accouting Systems</a>
+      <a class="navbar-brand" href="Home.php">Skynet Pharmaceutical</a>
     </div>
     <ul class="nav navbar-nav">
 		<li><a href="login.php">Login</a></li>

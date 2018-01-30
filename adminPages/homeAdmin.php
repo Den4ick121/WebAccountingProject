@@ -3,16 +3,16 @@
 ?>
 
 <br>
-<div class="container">
+<div class="container-fluid">
 
         <h1 class = "headDesign" allign = "left"> Last Months Performance: </h1>
 
 <div id="chartHomediv"></div>
 </div>
 </div>
-</br><br>
+</br>
 
-
+</br>
 
 <?php 
  include("includes/site-footer.php");

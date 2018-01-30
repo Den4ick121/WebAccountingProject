@@ -20,13 +20,6 @@
 <div class="row">
 <div class="container alert alert-dark">
 
-<div class="row justify-content-center">
-    <div class="d-flex flex-column ">
-        <div><h3>Balance Sheet</h3></div>
-        <div>As of 2018-1-28</div>
-    </div>
-</div>
-
 <!--Details Acct Part Starts -->
     <div class="row">
         <!--Assets part starts-->
@@ -41,13 +34,13 @@
                 <div class="col sm-11">
                     <dl class="row">
                         <dd class="col-sm-9">Cash</dd>
-                        <dd class="col-sm-2">500.00</dd>
+                        <dd class="col-sm-2">500.00$</dd>
                         <dd class="col-sm-9">Investment Account</dd>
-                        <dd class="col-sm-2">453.00</dd>
+                        <dd class="col-sm-2">453.00$</dd>
                         <dd class="col-sm-9">Saving Account</dd>
-                        <dd class="col-sm-2">152.00</dd>
+                        <dd class="col-sm-2">152.00$</dd>
                         <dt class="col-sm-9" style="text-align:right">Total current assets</dt>
-                        <dt class="col-sm-2">2543.44</dt>
+                        <dt class="col-sm-2">2543.44$</dd>
                     </dl>                    
                 </div>    
             </div>
@@ -61,13 +54,13 @@
                 <div class="col sm-11">
                     <dl class="row">
                         <dd class="col-sm-9">Credit Card Account</dd>
-                        <dd class="col-sm-2">564.00</dd>
+                        <dd class="col-sm-2">564.00$</dd>
                         <dd class="col-sm-9">Personal Loan Account</dd>
-                        <dd class="col-sm-2">785.00</dd>
+                        <dd class="col-sm-2">785.00$</dd>
                         <dd class="col-sm-9">Auto Loan Account</dd>
-                        <dd class="col-sm-2">254.00</dd>
+                        <dd class="col-sm-2">254.00$</dd>
                         <dt class="col-sm-9" style="text-align:right">Total other assets</dt>
-                        <dt class="col-sm-2">3575.87</dt>
+                        <dt class="col-sm-2">3575.87$</dd>
                     </dl>                    
                 </div>    
             </div>
@@ -87,15 +80,15 @@
                 <div class="col sm-11">
                     <dl class="row">
                         <dd class="col-sm-9">Account Payable</dd>
-                        <dd class="col-sm-2">500.00</dd>
+                        <dd class="col-sm-2">500.00$</dd>
                         <dd class="col-sm-9">Wages Payagle</dd>
-                        <dd class="col-sm-2">453.00</dd>
+                        <dd class="col-sm-2">453.00$</dd>
                         <dd class="col-sm-9">Warranty Liability</dd>
-                        <dd class="col-sm-2">152.00</dd>
+                        <dd class="col-sm-2">152.00$</dd>
                         <dd class="col-sm-9">Unearned revenue</dd>
-                        <dd class="col-sm-2">458.00</dd>
+                        <dd class="col-sm-2">458.00$</dd>
                         <dt class="col-sm-9" style="text-align:right">Total current liabilities</dt>
-                        <dt class="col-sm-2">2214.35</dt>
+                        <dt class="col-sm-2">2214.35$</dd>
                     </dl>                    
                 </div>    
             </div>
@@ -108,11 +101,11 @@
                 <div class="col sm-11">
                     <dl class="row">
                         <dd class="col-sm-9">Notes Payable</dd>
-                        <dd class="col-sm-2">500.00</dd>
+                        <dd class="col-sm-2">500.00$</dd>
                         <dd class="col-sm-9">Bonds Payagle</dd>
-                        <dd class="col-sm-2">453.00</dd>
+                        <dd class="col-sm-2">453.00$</dd>
                         <dt class="col-sm-9" style="text-align:right">Total long-term liabilities</dt>
-                        <dt class="col-sm-2">953.00</dt>
+                        <dt class="col-sm-2">953.00$</dd>
                     </dl>                    
                 </div>    
             </div>
@@ -121,7 +114,7 @@
             <div class="row">            
                 <dl class="row">
                         <dd class="col-sm-9">Total liabilities</dd>
-                        <dd class="col-sm-3">4286.52</dd>
+                        <dd class="col-sm-3">4286.52$</dd>
                 </dl>
                 
             </div>
@@ -129,7 +122,7 @@
             <div class="row">
                 <dl class="row">
                         <dd class="col-sm-9">Capital</dd>
-                        <dd class="col-sm-3">4286.52</dd>
+                        <dd class="col-sm-3">4286.52$</dd>
                 </dl>
             </div>
         </div>
@@ -145,7 +138,7 @@
         <div class="row">
             <dl class="row">
                 <dd class="col-sm-9">Total assets</dd>
-                <dd class="col-sm-3">4215.12</dd>
+                <dd class="col-sm-3">4215.12$</dd>
             </dl>
         </div>        
         </div>
@@ -156,14 +149,14 @@
         <div class="row">
             <dl class="row">
                 <dd class="col-sm-9">Total liabilities &amp; equity</dd>
-                <dd class="col-sm-3">3985.93</dd>
+                <dd class="col-sm-3">3985.93$</dd>
             </dl>
         </div>
         </div>
     </div>
 </div>
 </div>
-
+<br><br><br><br>
 
 
 <?php 

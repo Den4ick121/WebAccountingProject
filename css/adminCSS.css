@@ -1,6 +1,6 @@
 body, html {
 	font-family: Helvetica, Verdana, sans-serif;
-	background:url(../img/sky.jpg) 100% top no-repeat; background-attachment:fixed;
+	background:url(../img/leaves.png) 100% top no-repeat; background-attachment:fixed;
 	font-style:normal;
 	width: 100%;
 }
@@ -65,86 +65,7 @@ caption {
   font-weight: 400;
   padding: 10px 0;
 }
-/* Table */
 
-thead {
-  font-weight: 400;
-  background-color:#337ab7;
-  color: #FFF;
-  font-size: 18px;
-}
-
-.table {
-	max-width: 960px;
-	margin: 10px auto;
-	color: black;
-	font-size: 16px;
-}
-
-#tableDiv {
-	background-color: rgba(39, 44, 45, 0.9);
-	color: white;
-	display: block;
-	padding: 15px;
-	padding-bottom: 45px;
-}
-
-#tablePaymentDiv {
-	background-color: rgba(39, 44, 45, 0.9);
-	color: white;
-	display: block;
-	padding: 15px;
-	padding-bottom: 125px;
-}
-
-tr {
-  background: white;
-  border-bottom: 1px solid #FFF;
-  margin-bottom: 5px;
-}
-
-th {
-	font-weight: 400;
-	background-color:#483D8B;
-	color: #FFF;
-	font-size: 18px;	
-}	
-
-th, td {
-  text-align: left;
-  padding: 20px;
-  font-weight: 300;
-}
-
-tfoot tr {
-}
-
-tfoot td {
-  padding: 10px 2px;
-  font-size: 0.8em;
-  color: #8a97a0;
-}
-
-tr:hover {
-	background-color: white;
-			}
-#search {
-	float: right;
-	width: 80%;
-	height: 38px;
-	font-size: 18px;
-	padding:2px;
-	border:1px solid white;
-	color: black;
-	border-radius: 4px;
-	padding-right: 0px;
-}
-
-#customerSearchButton {
-	font-size: 16px;
-	padding: 7px;
-}
-/* TableEnd */
 
 #chartHomediv {
 	width		: 100%;
@@ -182,6 +103,119 @@ tr:hover {
 }
 
 
+/* Table */
+
+#tableDiv {
+	background: linear-gradient(45deg, rgba(174,206,97,1) 0%,rgba(39,44,45,0.9) 30%);
+	color: white;
+	display: block;
+	padding: 5px;
+	padding-bottom: 45px;
+}
+
+#tablePaymentDiv {
+	background-color: rgba(39, 44, 45, 0.9);
+	color: white;
+	display: block;
+	padding: 15px;
+	padding-bottom: 125px;
+}
+
+.table {
+	margin: 10px auto;
+	color: black;
+	font-size: 16px;
+}
+
+
+thead {
+  font-weight: 400;
+  background-color:#4f93ce;
+  color: #FFF;
+  font-size: 18px;
+}
+
+tr {
+	background: white;
+	border: 1px solid #FFF;
+	margin-bottom: 5px;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+th {
+	background-color:#4f93ce;
+	color: #FFF;
+	font-size: 18px;
+	
+}	
+
+th, td {
+	text-align: left;
+	padding: 20px;
+	font-weight: 300;
+	border:1px solid white;
+
+}
+
+tfoot td {
+  padding: 10px 2px;
+  font-size: 0.8em;
+  color: #8a97a0;
+}
+
+#tableTotal th{
+	font-size: 20px;
+	text-align: center;
+	width: 151px;
+}
+
+#tableTotal td{
+	font-size: 18px;
+	font-weight: bold;
+	background-color: lightgray;
+	height: 48px;
+	vertical-align:middle;
+	text-align:center;
+}
+
+#tableTotal .tableTotalHeading {
+	font-size: 26px;
+	vertical-align: middle;
+	text-align: center;
+	border:1px solid white;
+
+}	
+
+
+.tableTotalBalanceTH {
+	text-align: center;
+	font-size:18px;
+}	
+
+.tableTotalBalanceTD {
+	text-align: center;
+	font-size:18px;
+}
+
+#search {
+	float: right;
+	width: 80%;
+	height: 38px;
+	font-size: 18px;
+	padding:2px;
+	border:1px solid white;
+	color: black;
+	border-radius: 4px;
+	padding-right: 0px;
+}
+
+#customerSearchButton {
+	font-size: 16px;
+	padding: 7px;
+}
 
 
 /* Footer */
@@ -193,18 +227,6 @@ tr:hover {
     font-size:16px;
 	margin: left;
 }
-
-#divNavbar {
-	margin-top: 35px;
-}
-
-#footerNavbar {
-	background-color: transparent;
-	margin-bottom: 3px;
-	font-size: 20px;
-	text-align: left;
-}
-
 	
 .footer p {
     line-height:26px;

@@ -32,7 +32,7 @@
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="navbar-header">
-         <h1 class = "headerDesign">Skynet Accounting Systems</h1>
+         <h1 class = "headerDesign">Skynet Pharmaceutical</h1>
       </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -65,7 +65,6 @@
             <a class="dropdown-item" href="purchasingOrderAdmin.php">Purchasing Order</a>
             <a class="dropdown-item" href="inventoryFileAdmin.php">Inventory</a>
             <a class="dropdown-item" href="supplierInfoAdmin.php">Supplier Information</a>
-            <a class="dropdown-item" href="salesReportAdmin.php">Sales Report</a>
             <a class="dropdown-item" href="paymentAdmin.php">Payment</a>    
             </div>
         </li>
@@ -83,16 +82,9 @@
             <i class="fa fa-address-book" aria-hidden="true"></i> Charts of Accounts <span class="caret"></span>
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#"  role="button">
-            Help <span class="caret"></span>
-            </a>
-        </li>
         <ul style = "float: right">
         <li class="nav-item">
-            <a class="nav-link" href="../home.php""  role="button">
-            Exit <span class="caret"></span>
-            </a>
+            <a class="nav-link" href="../home.php" role="button"> Exit <span class="caret"></span> </a>
         </li>
         </ul>
         <!-- 

@@ -5,10 +5,20 @@
 <br>
 <div class="container">
 
-        
-	<div id = "inputDiv">
-	<fieldset>
+    <div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 		<h2 class = "headDesign"> Supplier Form </h2>
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+<div id = "inputDiv">
+	<fieldset>
 		<hr>
 		<div class = "form-row">
 							<div class="form-group col-md-6">
@@ -80,7 +90,11 @@
 			</div>
 			
 		</fieldset>
-	</div>
+	</div>      </div>
+    </div>
+  </div>
+  
+	
 </br>
 	<div id = "tableDiv"> 
 			<h2 class = "headDesign"> Supplier Information File  </h2>
@@ -272,7 +286,7 @@
 
 
 
-
+</br>
 
 
 <?php 

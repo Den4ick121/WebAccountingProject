@@ -3,90 +3,115 @@
 ?>
 
 <br>
-<div class="container">
+<div class="container-fluid">
 
-        
+        <div id = "tableDiv">
+		<table class = "table">
+		<div  >
+			<h1 class = "headDesign">Sales Report
+				<span class = "glyphicon glyphicon-question-sign" id = "glyphicon"></span> <div id="helpMessage"> <p> </p> </div>
+				
+			</h1> 
+		</div>
+			<thead>
+				<tr>				
+					  <th scope="col">Date</th>
+					  <th scope="col" width = "100px">Type</th>
+					  <th scope="col" width = "70px">#</th>
+					  <th scope="col">Customer</th>
+					  <th scope="col">Due Date</th>
+					  <th scope="col" class = "tableTotalBalanceTH">Balance</th>
+					  <th scope="col">Status</th>
+					  <th scope="col">Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<td>21 July</td>
+				<td>Extreme</td>
+				<td>69696</td>
+				<td>14/8</td>
+				<td class = "tableTotalBalanceTD">4580$</td>
+				<td>Sold</td>
+				<td>Empty</td>
+				<td>Empty</td>
+				</tr>
 	
-	<div id = "tableDiv"> 		
-		
-		<h2 class = "headDesign"> Sales Report </h2>
-		<table class = "table table-bordered">
-		<thead>
-			<tr>
-			  <th scope="row"></th>
-			  <th scope="col">Date</th>
-			  <th scope="col">Type</th>
-			  <th scope="col">#</th>
-			  <th scope="col">Customer</th>
-			  <th scope="col">Due Date</th>
-			  <th scope="col">Balance</th>
-			  <th scope="col">Total</th>
-			  <th scope="col">Status</th>
-			  <th scope="col">Action</th>
-			</tr>
-		</thead>
+				<tr>
+				<td>21 July</td>
+				<td>Extreme</td>
+				<td>69696</td>
+				<td>14/8</td>
+				<td class = "tableTotalBalanceTD">4580$</td>
+				<td>Sold</td>
+				<td>Empty</td>
+				<td>Empty</td>
+				</tr>
+				
+				<tr>
+				<td>21 July</td>
+				<td>Extreme</td>
+				<td>69696</td>
+				<td>14/8</td>
+				<td class = "tableTotalBalanceTD">4580$</td>
+				<td>Sold</td>
+				<td>Empty</td>
+				<td>Empty</td>
+				</tr>
+				
+				<tr>
+				<td>21 July</td>
+				<td>Extreme</td>
+				<td>69696</td>
+				<td>14/8</td>
+				<td class = "tableTotalBalanceTD">4580$</td>
+				<td>Sold</td>
+				<td>Empty</td>
+				<td>Empty</td>
+				</tr>
+	
+				<tr>
+				<td>21 July</td>
+				<td>Extreme</td>
+				<td>69696</td>
+				<td>14/8</td>
+				<td class = "tableTotalBalanceTD">4580$</td>
+				<td>Sold</td>
+				<td>Empty</td>
+				<td>Empty</td>
+				</tr>
+				
+				
+				<tr id = "tableTotal">
+				<th colspan = "2"  rowspan = "2" class = "tableTotalHeading">Summary</th>
+				<th>Cell</th>
+				<th>Cell</th>
+				<th>Cell</th>
+				<th>Cell</th>
+				<th>Cell</th>
+				<th class = "tableTotalBalanceTH">Balance Total</th>
+				</tr>
+				
+				<tr id = "tableTotal">
+				<td> Cell</td>
+				<td> Cell</td>
+				<td> Cell</td>
+				<td> Cell</td>
+				<td> Cell</td>
 
-		<tbody>
-	<tr>
-			  <td><input id="checkBox" type="checkbox"/></td>
-			  <td>1st January</td>
-			  <td>Extreme</td>
-			  <td>420</td>
-			  <td>Ahmed</td>
-			  <td>Tomorrow</td>
-			  <td>420</td>
-			  <td>420</td>
-			  <td>Done</td>
-			  <td>Wasted</td>
-	</tr>
-	<tr>
-			  <td><input id="checkBox" type="checkbox"/></td>
-			  <td>1st January</td>
-			  <td>Extreme</td>
-			  <td>420</td>
-			  <td>Ahmed</td>
-			  <td>Tomorrow</td>
-			  <td>420</td>
-			  <td>420</td>
-			  <td>Done</td>
-			  <td>Wasted</td>
-	</tr>
-	<tr>
-			  <td><input id="checkBox" type="checkbox"/></td>
-			  <td>1st January</td>
-			  <td>Extreme</td>
-			  <td>420</td>
-			  <td>Ahmed</td>
-			  <td>Tomorrow</td>
-			  <td>420</td>
-			  <td>420</td>
-			  <td>Done</td>
-			  <td>Wasted</td>
-	</tr>
-			</tbody>
-	</table>
-					<div class = "form-row">
-					<div class ="form-group col-md-4 col-md-offset-4">
-						<input type="search" id="search" placeholder="Seach by Number"/>
-					</div>
-					<div class ="form-group col-md-2">
-						<input type ="button" value = "Edit a line" id = "button" class="btn btn-primary btn-md"/>
-					</div>
-					<div class ="form-group col-md-2">
-						<input type ="button" value = "Delete a line" id = "button" class="btn btn-primary btn-md"/>
-					</div>
-					
-				</div>	
-				</div>
-	</div>	
-	</div>
-</br>
-
+				<td class = "tableTotalBalanceTD">99000$</td>
+				
+			
+				</tr>
+				</tbody>
+			</table>
 			
 	</div>
-<br><br><br><br><br><br><br><br>
+	</div>			
+</div>
+	
 
-
+</br>
 
 
 <?php 
