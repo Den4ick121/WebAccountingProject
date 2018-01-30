@@ -1,6 +1,8 @@
+<?php require('config/userconnection.php'); ?>
+
 <!DOCTYPE html>
 <head>
-    <title>Accounting company</title>
+    <title>Accounting System</title>
     <link rel="stylesheet" type = "text/css" href="css/design.css">
 
 </head>
@@ -11,15 +13,12 @@
 		  
 
 		 </div>
-
-	
         <nav class="navbar navbar-inverse bg-inverse">
       <div class="navbar-header">
          <h1 class = "headerDesign">Skynet Pharmaceutical</h1>
       </div>
     <ul class="nav navbar-nav">
         <li class="active"><a href="login.php">Login</a></li>
-        <li><a href="register.php">Register</a></li>
         <li><a href="Home.php">Home</a></li>
         <li><a href="services.php">Our Service</a></li>
         <li><a href="career.php">Career</a></li>
@@ -32,26 +31,20 @@
 <h1 id = "header">Login: </h1>
 <br>
   <div id = "login" class="container">
-<form id="form_id" method="post" name="myform">
+<form method="POST" action="<?php $_SERVER['PHP_SELF']; ?>" id="form_id"  name="myform">
   <div class="foot-logo">
-              <img src="img/login.png">
-          </div>
-    <label for="username">Username</label>
-    <input type="text" name="name" class="form-control" id="username" placeholder="Enter Username">
-    <br>
-    <label for="password">Password</label>
-    <input type="password" name="password" class="form-control" id="password" placeholder="Password">
-    <br>
-  <input type="button" class="btn btn-success" value="Login" id="submit" onclick="validate()"/>
-</form>
+      <img src="img/login.png">
   </div>
+  <label for="username">Username</label>
+  <input type="text" name="username" class="form-control" id="username" placeholder="Enter Username">
+  <br>
+  <label for="password">Password</label>
+  <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+  <br>
+  <input type="submit" class="btn btn-success" value="Login" id="submit" name="submit"/>
+</form>
+</div>
 </br>
-
-
-
-
-
-
 
 <div class="footer-section">
     <div class="footer">
@@ -106,3 +99,21 @@
 	<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
 	<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
 </body>
+
+
+<?php
+  if (isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+  if ($username == "" || $password == "") {
+    echo "<script>alert('Oops...Username or Password is invalid');</script>";
+  }else{
+    if(checkLogin($username, $password)){
+      header('Location: '.ROOTURL.'');
+    }else{
+      echo "<script>alert('Oops... Username or Password is invalid');</script>";
+    }
+  }
+}
+
+?>

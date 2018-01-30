@@ -75,7 +75,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="balancesheet.php">Balance Sheet</a>
             <a class="dropdown-item" href="incomestatement.php">Income Statement</a>
-            <a class="dropdown-item" href="aragreing.php">A/R Ageing Summary</a>
+            <a class="dropdown-item" href="arageingreport.php">A/R Ageing Summary</a>
             </div>
         </li>
         <li class="nav-item">
