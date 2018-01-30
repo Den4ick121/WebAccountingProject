@@ -98,9 +98,7 @@
 </div>
 
 
-<?php 
-include("includes/calendar.php");
-?>
+
 
 <?php 
  include("includes/site-footer.php");

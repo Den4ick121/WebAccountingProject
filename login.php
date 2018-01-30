@@ -35,6 +35,7 @@
   <div class="foot-logo">
       <img src="img/login.png">
   </div>
+<<<<<<< HEAD
   <label for="username">Username</label>
   <input type="text" name="username" class="form-control" id="username" placeholder="Enter Username">
   <br>
@@ -45,6 +46,9 @@
 </form>
 </div>
 </br>
+=======
+<br><br>
+>>>>>>> 7add8613412f6f064ca131c4902b721e4cddc8ac
 
 <div class="footer-section">
     <div class="footer">

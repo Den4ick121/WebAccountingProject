@@ -283,7 +283,7 @@ tfoot td {
 
 /*footer bottom */
 .footer-bottom {
-	position:absolute;
+	position:relative;
 	bottom:-100;
     width:100%;
 	height: 45px;
