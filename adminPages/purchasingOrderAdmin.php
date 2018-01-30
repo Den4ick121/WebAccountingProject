@@ -12,7 +12,7 @@
 			<h1 class = "headDesign"> Purchasing Order </h1>
 						<hr>
 		<div class = "form-row">
-				<div class ="form-group col-md-4">
+				<div class ="form-group col-md-3">
 				<form action="http://www.example.com/profile.php">
 			<p>Choose supplier: </p>
 					<select name="payer" class="form-control">
@@ -23,21 +23,23 @@
 				</form>
 			</div>
 
-			<div class ="form-group col-md-4">
+			<div class ="form-group col-md-3">
 				<p>Cost per Unit </p>
 					<input type="text" name="order" class="form-control"/>
 
 			</div>
 
-			<div class ="form-group col-md-4">
-			<h1 class = "headingDesighn"> Balance <span id="balance">000$</span></h1>
+			<div class ="form-group col-md-3">
+				<p>Quantity :</p>
+					<input type="text" name="quantity" class="form-control"/>
+
 			</div>
 
 		</div>
 
 		<div class = "form-row">
 
-			<div class ="form-group col-md-4">
+			<div class ="form-group col-md-3">
 				<form action="http://www.example.com/profile.php">
 					<p>Choose product: </p>
 					<select name="payment" class="form-control">
@@ -48,14 +50,25 @@
 				</form>
 			</div>
 
-			<div class ="form-group col-md-4">
-				<p>Order No.</p>
-				<input type="text" name="order" class="form-control"/>
+			<div class ="form-group col-md-2">
+				<form action="http://www.example.com/profile.php">
+					<p>Order No. : </p>
+					<select name="order" class="form-control">
+						<option value="1"> 1 </option>
+						<option value="2"> 2 </option>
+						<option value="3"> 3 </option>
+						<option value="4"> 4 </option>
+					</select>
+				</form>
 			</div>
 			
-			<div class ="form-group col-md-4">
-					<input type ="button" value = "Submit" id = "anotherSubmitButton" class="btn btn-primary btn-lg"/>
+			<div class ="form-group col-md-3">
+			<h1> Balance <span id="balance">000$</span></h1>
 			</div>
+			
+			</div>
+			<div class ="form-group col-md-3">
+					<input type ="button" value = "Submit" id = "anotherSubmitButton" class="btn btn-primary btn-lg"/>
 			</div>
 		</fieldset>
 
@@ -66,7 +79,6 @@
 					<th scope="column">Product</th>
 					<th scope="column">Cost per Unit</th>
 					<th scope="column">Quantity</th>
-					<th scope="column">Order No.</th>
 					<th scope="column">TOTAL</th>
 
 				</tr>
@@ -76,40 +88,35 @@
 					
 					<td>1</td>
 					<td>2018-1-2</td>
-					<td id = "Order">1234</td>
-					<td>2</td>
+					<td id = "Order">1</td>
 					<td>2000$</td>
 					
 				</tr>
 				<tr>
 					<td>2</td>
 					<td>2018-1-2</td>
-					<td id = "Order">1235</td>
-					<td>1</td>
+					<td id = "Order">1</td>
 					<td>2000$</td>
 
 				</tr>
 				<tr>
 					<td>3</td>
 					<td>2018-1-2</td>
-					<td id = "Order">1236</td>
-					<td>4</td>
+					<td id = "Order">2</td>
 					<td>2000$</td>
 
 				</tr>
 				<tr>
 					<td>4</td>
 					<td>2018-1-2</td>
-					<td id = "Order">1237</td>
-					<td>4</td>
+					<td id = "Order">3</td>
 					<td>2000$</td>
 
 				</tr>
 				<tr>
 					<td>5</td>
 					<td>2018-1-2</td>
-					<td id = "Order">1238</td>
-					<td>2</td>
+					<td id = "Order">4</td>
 					<td>2000$</td>
 
 				</tr>

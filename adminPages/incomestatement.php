@@ -3,19 +3,7 @@
 ?>
 
 <br>
-<div class="container">
-    <fieldset>
-<div class="row mt-3">
-<dl class="row">
-    <dt class=col-sm-4>Date Start</dt>
-    <dd class=col-sm-8><input type="text" id="datepicker"></dd>
 
-    <dt class=col-sm-4>Date End</dt>
-    <dd class=col-sm-8><input type="text" id="datepicker2"></dd>
-</dl>
-</div>
-</fieldset>
-</div>
 
 <div class="row">
 <div class="container alert alert-dark">
@@ -59,11 +47,10 @@
 </div>
 </div>
 </div>
-<br><br><br><br>
+</div>
+<br><br><br><br><br><br><br><br>
 
-<?php 
-include("includes/calendar.php");
-?>
+
 
 <?php 
  include("includes/site-footer.php");

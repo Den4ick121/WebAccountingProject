@@ -79,7 +79,7 @@
 				</tfoot>
 			</table>
 				<div class = "form-row">
-					<div class ="form-group col-md-12">
+					<div class ="form-group col-md-2">
 					
 						<form action="http://www.example.com/profile.php" >
 							<p align="left">Payment method: </p>
@@ -94,7 +94,7 @@
 				</div>
 				
 				<div class = "form-row">
-					<div class ="form-group col-md-12">
+					<div class ="form-group col-md-1">
 					
 					<input type ="button" value = "Pay and Save" id = "button" class="btn btn-primary btn-lg"/>
 					</div>

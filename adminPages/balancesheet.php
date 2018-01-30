@@ -3,19 +3,7 @@
 ?>
 
 <br>
-<div class="container">
-    <fieldset>
-<div class="row mt-3">
-<dl class="row">
-    <dt class=col-sm-4>Date Start</dt>
-    <dd class=col-sm-8><input type="text" id="datepicker"></dd>
 
-    <dt class=col-sm-4>Date End</dt>
-    <dd class=col-sm-8><input type="text" id="datepicker2"></dd>
-</dl>
-</div>
-</fieldset>
-</div>
 
 <div class="row">
 <div class="container alert alert-dark">
@@ -88,7 +76,7 @@
                         <dd class="col-sm-9">Unearned revenue</dd>
                         <dd class="col-sm-2">458.00$</dd>
                         <dt class="col-sm-9" style="text-align:right">Total current liabilities</dt>
-                        <dt class="col-sm-2">2214.35$</dd>
+                        <dt class="col-sm-2">2214.35$</dt>
                     </dl>                    
                 </div>    
             </div>
@@ -105,7 +93,7 @@
                         <dd class="col-sm-9">Bonds Payagle</dd>
                         <dd class="col-sm-2">453.00$</dd>
                         <dt class="col-sm-9" style="text-align:right">Total long-term liabilities</dt>
-                        <dt class="col-sm-2">953.00$</dd>
+                        <dt class="col-sm-2">953.00$</dt>
                     </dl>                    
                 </div>    
             </div>

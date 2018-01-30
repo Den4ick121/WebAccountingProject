@@ -10,7 +10,7 @@
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-			<h1 class = "headDesign"> Customer Details Form </h1>
+			<h1 class = "headDesign"> Create new Customer </h1>
         </button>
       </h5>
     </div>
@@ -89,23 +89,7 @@
 </br>	
 	<div id = "tableDiv">
 	
-				<h2 class = "headDesign"> Customer Information File  </h2>
-
-				<div class = "form-row">
-					<div class ="form-group col-md-4 col-md-offset-3">
-						<input type="search" id="search" placeholder="Seach by Name"/>
-					</div>
-					<div class ="form-group col-md-2">
-						<input type ="button" value = "Edit a customer profile" id = "customerSearchButton" class="btn btn-primary btn-md"/>
-					</div>
-					<div class ="form-group col-md-3">
-						<input type ="button" value = "Delete a customer profile" id = "customerSearchButton" class="btn btn-primary btn-md"/>
-					</div>
-					
-				</div>	
-				<th><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" 
-				  aria-expanded="false" aria-controls="collapseExample">Show more</a></th>
-				  
+				<h2 class = "headDesign"> Customer Information</h2>				  
 
 						<div class="collapse" id="collapseExample">
 				    <div class="card card-body">
@@ -137,23 +121,14 @@
 				<tr>
 				
 					<th >Email Address</th>
-					<th colspan = "3"> Remark</th>
+					<th colspan = "3"> Personal phone number</th>
 				</tr>
 				<tr>
 					<td>wow@mail.omg</td>
-					<td colspan = "3">Ate all donuts</td>
+					<td colspan = "3">8-916-664-20-69</td>
 				</tr>
 				
-				<tr>
-					<th colspan = "2">Contact Person Name</th>
-					<th colspan = "2">Contact Person Phone Number</th>
-
-				</tr>
-				<tr>
-					<td colspan = "2">Your Amazing Friend</td>
-					<td colspan = "2">8-916-664-20-69</td>
-					
-				</tr>
+				
 
 				</tbody>
 			</table>				  
@@ -179,22 +154,14 @@
 				</tr>
 				<tr>
 					<th >Email Address</th>
-					<th colspan = "3"> Remark</th>
+					<th colspan = "3"> Personal phone number</th>
 				</tr>
 				<tr>
 					<td>wow@mail.omg</td>
-					<td colspan = "3">Tried to poison me once</td>
+					<td colspan = "3">8-916-664-20-69</td>
 				</tr>
 				
-				<tr>
-					<th colspan = "2">Contact Person Name</th>
-					<th colspan = "2">Contact Person Phone Number</th>
-
-				</tr>
-				<tr>
-					<td colspan = "2">Your Amazing Friend</td>
-					<td colspan = "2">8-916-664-20-69</td>
-				</tr>
+				
 				</tbody>
 			</table>
 </br>
@@ -213,28 +180,20 @@
 				<tr>
 					<td rowspan = "5"><input id="checkBox" type="checkbox"/></td>
 					<td id="Order">I dont remember</td>
-					<td>Maybe 566-56-... ehhh</td>
+					<td>420-420-666</td>
 					<td colspan = "2">Where?</td>
 					
 				</tr>
 				<tr>
 					<th >Email Address</th>
-					<th colspan = "3"> Remark</th>
+					<th colspan = "3"> Personal phone number</th>
 				</tr>
 				<tr>
 					<td>I think it's on gmail</td>
-					<td colspan = "3">Don't remember that person at all. Wierd.</td>
+					<td colspan = "3">8-916-664-20-69</td>
 				</tr>
 				
-				<tr>
-					<th colspan = "2">Contact Person Name</th>
-					<th colspan = "2">Contact Person Phone Number</th>
-
-				</tr>
-				<tr>
-					<td colspan = "2">Your Amazing Friend</td>
-					<td colspan = "2">8-916-664-20-69</td>
-				</tr>
+				
 				</tbody>
 			</table>
 </br>			
@@ -253,30 +212,22 @@
 				<tr>
 					<td rowspan = "5"><input id="checkBox" type="checkbox"/></td>
 					<td id="Order">Egor</td>
-					<td>123-456-789</td>
-					<td colspan = "2">Srinakarin 46</td>
+					<td>420-420-666</td>
+					<td colspan = "2">Where?</td>
 					
 				</tr>
 				<tr>
 					<th >Email Address</th>
-					<th colspan = "3"> Remark</th>
+					<th colspan = "3"> Personal phone number</th>
 				</tr>
 				<tr>
-					<td>hottestBeard_0nTheB1ock@hotmail.com</td>
-					<td colspan = "3">Want to finish this project</td>
+					<td>I think it's on gmail</td>
+					<td colspan = "3">8-976-644-20-69</td>
 				</tr>
 				
-				<tr>
-					<th colspan = "2">Contact Person Name</th>
-					<th colspan = "2">Contact Person Phone Number</th>
-
-				</tr>
-				<tr>
-					<td colspan = "2">Your Amazing Friend</td>
-					<td colspan = "2">8-916-664-20-69</td>
-				</tr>
+				
 				</tbody>
-			</table>				
+			</table>			
 		</div>
 	
 </div>

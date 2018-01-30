@@ -9,7 +9,7 @@
 		
 	<div id = "inputDiv">
 			<fieldset>
-			<h1 class = "headDesign"> Cash Collection Form </h1>
+			<h1 class = "headDesign"> Cash Collection </h1>
 <hr>
 			<div class = "form-row">
 							<div class ="form-group col-md-6">
@@ -22,23 +22,27 @@
 								</div>
 							</div>
 							
-							<div class ="form-group col-md-3">
-								<form>
-									<p> Invoice No. </p>  
-									<input type="text" class="form-control"/>
-								</form>
-							</div>
 							
-							<div class="form-group col-md-3">
-								<form>
-									<p> Item No. </p>  
-									<input type="text" class="form-control"/>
-								</form>
-							</div>
 
 			</div>
 
 			<div class = "form-row">
+				<div class ="form-group col-md-2">
+								<form>
+									<p> Invoice No. </p>  
+									<select name="invoice" class="form-control">
+						<option value="1"> 1 </option>
+						<option value="2"> 2 </option>
+						<option value="3"> 3 </option>
+						<option value="4"> 4 </option>
+					</select>
+
+								</form>
+							</div>
+							
+							
+							
+
 							<div class="form-group col-md-2">
 								<form>
 									<p> Quantity </p>  
@@ -53,31 +57,26 @@
 								</form>
 							</div>
 							
-							
-							<div class ="form-group col-md-8">
-								<form>
-									<p> Total Amount</p>  
-									<input type="text" class="form-control"/>
-								</form>
-							</div>
-							
 
 							
 			</div>
 
 			<div class = "form-row">
 							
-							
-							<div class ="form-group col-md-8">
+							<div class ="form-group col-md-2">
 								<form>
-									<p> Description </p>  
+									<p> Total Amount</p>  
 									<input type="text" class="form-control"/>
 								</form>
 							</div>
-							<div class ="form-group col-md-4">
+							
+							
+			</div>
+
+			<div class ="form-group col-md-2">
 								<input type ="button" value = "Submit" id = "submitButton" class="btn btn-primary btn-lg btn-block"/>
 							</div>
-			</div>
+
 			</fieldset>
 
 

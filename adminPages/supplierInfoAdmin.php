@@ -10,7 +10,7 @@
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-		<h2 class = "headDesign"> Supplier Form </h2>
+		<h2 class = "headDesign"> Create new supplier </h2>
         </button>
       </h5>
     </div>
@@ -98,19 +98,7 @@
 </br>
 	<div id = "tableDiv"> 
 			<h2 class = "headDesign"> Supplier Information File  </h2>
-			<div class = "form-row">
-						<div class ="form-group col-md-3 col-md-offset-5">
-							<input type="search" id="search" placeholder="Seach by order No.">
-						</div>
-						<div class ="form-group col-md-2">
-								<input type ="button" value = "Edit a line" id = "button" class="btn btn-primary btn-md"/>
-						</div>
-						<div class ="form-group col-md-2">
-
-								<input type ="button" value = "Clear a line" id = "button" class="btn btn-primary btn-md"/>
-						</div>
-			</div>
-					
+			
 			<table class = "table table-bordered">
 
 				<thead>
