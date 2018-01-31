@@ -1,5 +1,48 @@
-<?php 
- include("includes/site-header.php");
+<?php include('../config/dbconfig.php'); ?>
+<?php require('../config/db.php'); ?>
+<?php include('includes/site-header.php'); ?>
+
+<?php
+	if(isset($_POST['submit'])){
+		$quantity = mysqli_real_escape_string($conn, $_POST['quantity']);
+		$descrip = mysqli_real_escape_string($conn, $_POST['descrip']);
+		$unitcost = mysqli_real_escape_string($conn, $_POST['unitcost']);
+		$supplier = mysqli_real_escape_string($conn, $_POST['supplier']);
+		$product = mysqli_real_escape_string($conn, $_POST['product']);
+		$purchaseno = mysqli_real_escape_string($conn, $_POST['purchaseno']);
+		$date=date('Y-m-d');
+
+		$insertquery = "insert into Purchase(PurchaseNo, SupplierNo, DatePurchase ,Descrip) values ('$purchaseno','$supplier','$date','$descrip')";
+		$insertquery2 = "insert into PurchaseProduct(PurchaseNo, ProductNo, Qty ,PurchasePrice) values ('$purchaseno','$product','$quantity','$unitcost')";
+		if(mysqli_query($conn, $insertquery)){
+			if(mysqli_query($conn, $insertquery2)){
+				header('Location: '. $_SERVER['PHP_SELF'].'');
+			}
+		}else {
+			echo 'Error'. mysqli_error($conn) ;
+		}
+	}
+?>
+
+<?php
+	$query = "select ProductNo, ProductName from Product";
+	$query2 = "select SupplierNo, SupplierName from Supplier; ";
+	$query3 = "select Purchase.PurchaseNo, Purchase.DatePurchase, Supplier.SupplierName, Purchase.TrackStatus, 
+	sum(PurchaseProduct.Qty * PurchaseProduct.PurchasePrice) as Total
+	from Purchase join Supplier on Purchase.SupplierNo = Supplier.SupplierNo
+	join PurchaseProduct on Purchase.PurchaseNo = PurchaseProduct.PurchaseNo
+	group by Purchase.PurchaseNo, Purchase.DatePurchase, Supplier.SupplierName, Purchase.TrackStatus
+	order by Purchase.DatePurchase DESC;";
+	$result = mysqli_query($conn, $query);
+	$result2 = mysqli_query($conn, $query2);
+	$result3 = mysqli_query($conn, $query3);
+	$products = mysqli_fetch_all($result, MYSQLI_ASSOC);
+	$suppliers = mysqli_fetch_all($result2, MYSQLI_ASSOC);
+	$purchaseOrders = mysqli_fetch_all($result3, MYSQLI_ASSOC);
+	mysqli_free_result($result);
+	mysqli_free_result($result2);
+	mysqli_free_result($result3);
+	mysqli_close($conn);
 ?>
 
 <br>
@@ -12,26 +55,28 @@
 			<h1 class = "headDesign"> Purchasing Order </h1>
 						<hr>
 		<div class = "form-row">
+		<div class ="form-group col-md-3">
+		<form method="POST" action="<?php $_SERVER['PHP_SELF']; ?>">
+				<p>Purchase No:</p>
+					<input type="text" name="purchaseno" class="form-control"/>
+					
+			</div>
 				<div class ="form-group col-md-3">
-				<form action="http://www.example.com/profile.php">
+				
 			<p>Choose supplier: </p>
-					<select name="payer" class="form-control">
-						<option value="MacDonalds">MacDonalds </option>
-						<option value="BurgerKing"> BurgerKing </option>
-						<option value="KFC">KFC </option>
+					<select name="supplier" class="form-control">
+						<?php foreach($suppliers as $supplier): ?>
+						<option value="<?php echo $supplier['SupplierNo'] ?>"><?php echo $supplier['SupplierName'] ?></option>
+						<?php endforeach; ?>
 					</select>
-				</form>
-			</div>
-
-			<div class ="form-group col-md-3">
-				<p>Cost per Unit </p>
-					<input type="text" name="order" class="form-control"/>
 
 			</div>
 
+			
+
 			<div class ="form-group col-md-3">
-				<p>Quantity :</p>
-					<input type="text" name="quantity" class="form-control"/>
+				<p>Description:</p>
+					<input type="text" name="descrip" class="form-control"/>
 
 			</div>
 
@@ -40,86 +85,56 @@
 		<div class = "form-row">
 
 			<div class ="form-group col-md-3">
-				<form action="http://www.example.com/profile.php">
+				
 					<p>Choose product: </p>
-					<select name="payment" class="form-control">
-						<option value="Burgers"> Burgers </option>
-						<option value="Hot Dog"> Hot Dog </option>
-						<option value="Water"> Fresh Clean Water </option>
+					<select name="product" class="form-control">
+						<?php foreach($products as $product): ?>
+						<option value="<?php echo $product['ProductNo'] ?>"><?php echo $product['ProductName'] ?></option>
+						<?php endforeach; ?>
 					</select>
-				</form>
+				
 			</div>
 
-			<div class ="form-group col-md-2">
-				<form action="http://www.example.com/profile.php">
-					<p>Order No. : </p>
-					<select name="order" class="form-control">
-						<option value="1"> 1 </option>
-						<option value="2"> 2 </option>
-						<option value="3"> 3 </option>
-						<option value="4"> 4 </option>
-					</select>
-				</form>
-			</div>
-			
 			<div class ="form-group col-md-3">
-			<h1> Balance <span id="balance">000$</span></h1>
-			</div>
-			
+				
+					<p>Quantity: </p>
+					<input type="text" name="quantity">
 			</div>
 			<div class ="form-group col-md-3">
-					<input type ="button" value = "Submit" id = "anotherSubmitButton" class="btn btn-primary btn-lg"/>
+				<p>Cost per Unit </p>
+					<input type="text" name="unitcost" class="form-control"/>
+
 			</div>
+			</div>
+			<div class ="form-group col-md-3">
+					<input type ="submit" name="submit" value = "Submit" id = "anotherSubmitButton" class="btn btn-primary btn-lg"/>
+			</div>
+			</form>
 		</fieldset>
 
 			<table class = "table table-bordered" >
 
 				<thead>
 				<tr>
-					<th scope="column">Product</th>
-					<th scope="column">Cost per Unit</th>
-					<th scope="column">Quantity</th>
+				<th scope="column">Purchase No</th>
+					<th scope="column">Date</th>
+					<th scope="column">Supplier</th>
+					<th scope="column">Description</th>
 					<th scope="column">TOTAL</th>
 
 				</tr>
 				</thead>
 				<tbody>
-				<tr>
-					
-					<td>1</td>
-					<td>2018-1-2</td>
-					<td id = "Order">1</td>
-					<td>2000$</td>
-					
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>2018-1-2</td>
-					<td id = "Order">1</td>
-					<td>2000$</td>
-
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>2018-1-2</td>
-					<td id = "Order">2</td>
-					<td>2000$</td>
-
-				</tr>
-				<tr>
-					<td>4</td>
-					<td>2018-1-2</td>
-					<td id = "Order">3</td>
-					<td>2000$</td>
-
-				</tr>
-				<tr>
-					<td>5</td>
-					<td>2018-1-2</td>
-					<td id = "Order">4</td>
-					<td>2000$</td>
-
-				</tr>
+				<?php foreach($purchaseOrders  as $purchaseOrder): ?>
+					<tr>		
+					<td id = "Order"><?php echo $purchaseOrder['PurchaseNo']; ?></td>				
+						<td><?php echo $purchaseOrder['DatePurchase']; ?></td>
+						<td><?php echo $purchaseOrder['SupplierName']; ?></td>
+						<td><?php echo $purchaseOrder['Descrip']; ?></td>
+						<td><?php echo $purchaseOrder['Total']; ?></td>						
+					</tr>
+				<?php endforeach; ?>
+				
 				</tbody>
 			</table>
 	

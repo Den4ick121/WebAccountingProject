@@ -1,8 +1,32 @@
-<?php 
- include("includes/site-header.php");
+<?php include('../config/dbconfig.php'); ?>
+<?php require('../config/db.php'); ?>
+<?php include('includes/site-header.php'); ?>
+
+<?php
+	if(isset($_POST['submit'])){
+		$name = mysqli_real_escape_string($conn, $_POST['name']);
+		$phone = mysqli_real_escape_string($conn, $_POST['phone']);
+		$email = mysqli_real_escape_string($conn, $_POST['email']);
+		$address = mysqli_real_escape_string($conn, $_POST['address']);
+
+		$insertquery = "insert into Customer(CustName, Address, PhoneNo, Email) values ('$name','$address','$phone','$email')";
+
+		if(mysqli_query($conn, $insertquery)){
+			header('Location: '. $_SERVER['PHP_SELF'].'');
+		} else {
+			echo 'Error'. mysqli_error($conn) ;
+		}
+	}
 ?>
 
-<br>
+<?php
+	$query = "select CustName, Address, PhoneNo, Email from Customer; ";
+	$result = mysqli_query($conn, $query);
+	$customers = mysqli_fetch_all($result, MYSQLI_ASSOC);
+	mysqli_free_result($result);
+	mysqli_close($conn);
+?>
+
 <div class="container-fluid">
 
         <div id="accordion">
@@ -20,63 +44,42 @@
 		<div id = "inputDiv">
 				<div class = "form-row">
 								<div class ="form-group col-md-6">
-									<form>
+									<form method="POST" action="<?php $_SERVER['PHP_SELF']; ?>">
 									<p> Customer Name </p>
-									<input type="text" class="form-control">
-									</form>
+									<input type="text" class="form-control" name="name">
+									
 								</div>
 								
 								<div class ="form-group col-md-6" >
-									<form>
+									
 										<p> Phone Number </p>  
-										<input type="text" class="form-control">
-									</form>
+										<input type="text" class="form-control" name="phone">
+									
 								</div>
 				</div>
 
 				<div class = "form-row">
 								<div class="form-group col-md-3" >
-									<form>
+									
 										<p> E-Mail</p>  
-										<input type="email" class="form-control">
-									</form>
+										<input type="email" class="form-control" name="email">
+									
 								</div>
-								
-								<div  class ="form-group col-md-3">
-									<form>
-										<p>Contact Person Name</p>  
-										<input type="text" class="form-control">
-									</form>
-								</div>
-								
-								<div class ="form-group col-md-6">
-									<form>
-										<p> Contact Person Phone </p>  
-										<input type="text" class="form-control">
-									</form>
-								</div>
-				</div>
-				
-				<div class = "form-row">
-								<div class ="form-group col-md-12">
-									<form>
-										<p> Remark</p>  
-										<input type="text" class="form-control">
-									</form>
-								</div>							
+							
 				</div>
 				
 				<div class = "form-row">
 
 								<div class ="form-group col-md-8">
-									<form>
+									
 										<p> Address</p>  
-										<input type="text" class="form-control">
-									</form>
+										<input type="text" class="form-control" name="address">
+									
 								</div>
 								
 								<div class ="form-group col-md-4">
-								<input type ="button" value = "Create a new customer file" id = "submitButton" class="btn btn-primary btn-lg btn-block"/>
+								<input type ="submit" name="submit" value = "Create a new customer file" id = "submitButton" class="btn btn-primary btn-lg btn-block"/>
+								</form>
 								</div>								
 				</div>
 				
@@ -99,135 +102,24 @@
 			
 				<thead>
 				<tr>
-					<th></th>
 					<th>Customer Name </th>
 					<th>Phone Number</th>
-					<th colspan = "2"> Address </th>
-					
+					<th> Address </th>
+					<th>Email</th>					
 				</tr>
 				</thead>
 				<tbody>
-				<tr> 
-				
-				<tr>
-					<td rowspan = "5"><input id="checkBox" type="checkbox"/></td>
-					<td id="Order">Homer Simspon</td>
-					<td>420-420-666</td>
-					<td colspan = "2">Home ave 4/20</td>
-				
-				</tr>
-				
-				
-				<tr>
-				
-					<th >Email Address</th>
-					<th colspan = "3"> Personal phone number</th>
-				</tr>
-				<tr>
-					<td>wow@mail.omg</td>
-					<td colspan = "3">8-916-664-20-69</td>
-				</tr>
-				
-				
-
+					<?php foreach($customers as $customer): ?>
+						<tr>
+							<td id="Order"><?php echo $customer['CustName']; ?></td>
+							<td><?php echo $customer['PhoneNo']; ?></td>
+							<td><?php echo $customer['Address']; ?></td>
+							<td><?php echo $customer['Email']; ?></td>				
+						</tr>
+					<?php endforeach; ?>
 				</tbody>
 			</table>				  
-</br>
-			<table class = "table table-bordered">
 
-				<thead>
-				<tr>
-					<th></th>
-					<th>Customer Name </th>
-					<th>Phone Number</th>
-					<th colspan = "2"> Address</th>
-					
-				</tr>
-				</thead>
-				<tbody>
-				<tr>
-					<td rowspan = "5"><input id="checkBox" type="checkbox"/></td>
-					<td id="Order">Aperture Science</td>
-					<td>420-420-666</td>
-					<td colspan = "2">Springfield Spooning St. 4/20</td>
-					
-				</tr>
-				<tr>
-					<th >Email Address</th>
-					<th colspan = "3"> Personal phone number</th>
-				</tr>
-				<tr>
-					<td>wow@mail.omg</td>
-					<td colspan = "3">8-916-664-20-69</td>
-				</tr>
-				
-				
-				</tbody>
-			</table>
-</br>
-			<table class = "table table-bordered">
-
-				<thead>
-				<tr>
-					<th></th>
-					<th>Customer Name </th>
-					<th>Phone Number</th>
-					<th colspan = "2"> Address</th>
-					
-				</tr>
-				</thead>
-				<tbody>
-				<tr>
-					<td rowspan = "5"><input id="checkBox" type="checkbox"/></td>
-					<td id="Order">I dont remember</td>
-					<td>420-420-666</td>
-					<td colspan = "2">Where?</td>
-					
-				</tr>
-				<tr>
-					<th >Email Address</th>
-					<th colspan = "3"> Personal phone number</th>
-				</tr>
-				<tr>
-					<td>I think it's on gmail</td>
-					<td colspan = "3">8-916-664-20-69</td>
-				</tr>
-				
-				
-				</tbody>
-			</table>
-</br>			
-			<table class = "table table-bordered">
-
-				<thead>
-				<tr>
-					<th></th>
-					<th>Customer Name </th>
-					<th>Phone Number</th>
-					<th colspan = "2"> Address</th>
-					
-				</tr>
-				</thead>
-				<tbody>
-				<tr>
-					<td rowspan = "5"><input id="checkBox" type="checkbox"/></td>
-					<td id="Order">Egor</td>
-					<td>420-420-666</td>
-					<td colspan = "2">Where?</td>
-					
-				</tr>
-				<tr>
-					<th >Email Address</th>
-					<th colspan = "3"> Personal phone number</th>
-				</tr>
-				<tr>
-					<td>I think it's on gmail</td>
-					<td colspan = "3">8-976-644-20-69</td>
-				</tr>
-				
-				
-				</tbody>
-			</table>			
 		</div>
 	
 </div>

@@ -47,7 +47,7 @@
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> Revenue <span class="caret"></span>
+            <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> Sales <span class="caret"></span>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="cashCollectionAdmin.php">Cash Collection</a>
@@ -59,7 +59,7 @@
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Expendeture <span class="caret"></span>
+            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Expenses <span class="caret"></span>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="purchasingOrderAdmin.php">Purchasing Order</a>
@@ -80,7 +80,7 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" href="chartOfAccountsAdmin.php"  role="button">
-            <i class="fa fa-address-book" aria-hidden="true"></i> Charts of Accounts <span class="caret"></span>
+            <i class="fa fa-address-book" aria-hidden="true"></i> Accounting <span class="caret"></span>
             </a>
         </li>
         <ul style = "float: right">
